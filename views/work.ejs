@@ -1,0 +1,22 @@
+<%- include('partials/header.ejs') %>
+
+<div class="todo-container">
+    <div class="header">
+        <h1>Work</h1>
+    </div>
+    <div class="box">
+        <% for( let index = 0; index < workToDo.length; index++ ) { %>
+            <div class="list-item">
+                <input type="checkbox">
+                <label><%= workToDo[index] %></label><br>
+            </div>
+        <% } %>
+        <form class="list-item" action="/work" method="POST">
+            <input type="text" id="item" name="item" placeholder="Add a new item" required>
+            <input type="submit" value="+">
+        </form> 
+    </div>
+ 
+</div>
+
+<%- include('partials/footer.ejs') %>

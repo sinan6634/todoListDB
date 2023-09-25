@@ -1,0 +1,26 @@
+<%- include('partials/header.ejs') %>
+
+<div class="todo-container">
+    <div class="header">
+        <h1><%= currentDay %></h1>
+    </div>
+    <div class="box">
+        <% todayToDo.forEach(element => { %>
+            <form action="/delete" method="POST">
+                <div class="list-item">
+                    <input type="checkbox" name="checkbox" value="<%= element._id %>" class="button" onChange="this.form.submit()">
+                    <label><%= element.name %></label><br>
+                </div>
+                <input type="hidden" name="listName" value="<%= currentDay %>"></input>                
+            </form>
+        <% }); %>
+        <form class="list-item" action="/" method="POST">
+            <input type="text" id="item" name="item" placeholder="Add a new item" required>
+            <!-- <input type="submit" value="+" class="button"> -->
+            <button type="submit" class="button" name="listName" value="<%= currentDay %>">+</button>
+        </form> 
+    </div>
+ 
+</div>
+
+<%- include('partials/footer.ejs') %>

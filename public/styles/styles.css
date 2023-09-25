@@ -1,0 +1,120 @@
+body {
+    background: linear-gradient(20deg, #a683e3 50%, #e4e9fd 50%);
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.nav-container {
+    margin: 10px 30px 30px 30px;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.nav-options svg {
+    padding-right: 10px;
+
+}
+.menu ul {
+    padding: 10px;
+}
+.nav-options li{
+    list-style-type: none;
+    display: inline;
+    margin-right: 30px;
+    font-size: 1.5rem;
+}
+
+.nav-options a {
+    text-decoration: none;
+}
+.box {
+    border-radius: 5px;
+    min-width: 400px;
+    background-color: white;
+    box-shadow: 5px 5px 15px -5px rgba(0, 0, 0, 0.3);
+}
+
+.header {
+    min-width: 400px;
+    margin: 50px auto;
+    color: #e4e9fd;
+    background-color: #a683e3;
+    border-radius: 5px;
+    box-shadow: 5px 5px 15px -5px rgba(0, 0, 0, 0.3);
+}
+
+h1 {
+    font-weight: bold;
+    font-size: 1.5rem;
+    text-align: center;
+
+}
+
+label {
+    font-size: 1.5rem;
+    color: gray;
+}
+
+
+input:checked+label {
+    text-decoration: line-through;
+}
+
+.todo-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.list-item {
+    display: flex;
+    border-style: solid;
+    border-width: 0px 0px 1px 0px;
+    border-color: lightgray;
+    align-items: center;
+    padding-left: 30px;
+    padding-right: 30px;
+    min-height: 70px;
+}
+.list-item:last-child {
+    border-width: 0px;
+}
+
+button.button {
+    border-radius: 50%;
+    background-color: #a683e3;
+    border: none;
+    height: 50px;
+    width: 50px;
+    font-size: 2rem;
+    color: white;
+}
+
+input[type="text"] {
+    border: none;
+    padding: 10px;
+    margin-right: 10px;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.button {
+    cursor: pointer;
+}
+
+form.list-item {
+    display: flex;
+    justify-content: center;
+}
+
+input[type="checkbox"] {
+    margin-right: 20px;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    margin: 100px auto;
+}
+
